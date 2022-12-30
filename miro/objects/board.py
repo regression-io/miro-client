@@ -43,8 +43,5 @@ class Board(BaseMiroObject):
     def images(self):
         return Image().all_by_board_id(self.id)
 
-    def get_one(self):
-        return Board()
-
 def get_board_id(name):
     return Board().get_by_name(name).id
