@@ -3,7 +3,7 @@ import os
 
 import requests
 
-from miro.utils import (get_json_or_raise_exception)
+from miroclient.utils import (get_json_or_raise_exception)
 
 BASE_URL = 'https://api.miro.com'
 

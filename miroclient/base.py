@@ -1,7 +1,7 @@
 import json
 
-from miro.client import MiroApiClient
-from miro.exceptions import UnexpectedResponseException
+from miroclient.client import MiroApiClient
+from miroclient.exceptions import UnexpectedResponseException
 
 
 class BaseMiroObject(MiroApiClient):
@@ -67,6 +67,6 @@ class BaseMiroObject(MiroApiClient):
 
     def get_one(self, typ: str):
         import importlib
-        module = importlib.import_module('miro.objects.items')
+        module = importlib.import_module('miroclient.entities.items')
         class_ = getattr(module, self.capcase(typ))
         return class_()

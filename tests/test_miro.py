@@ -1,4 +1,4 @@
-from miro.objects.board import Board
+from miroclient.entities.board import Board
 
 
 # def test_create_board():

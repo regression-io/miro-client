@@ -1,4 +1,4 @@
-from miro.base import BaseMiroObject
+from miroclient.base import BaseMiroObject
 
 
 class Item(BaseMiroObject):

@@ -1,5 +1,5 @@
-from miro.base import BaseMiroObject
-from miro.objects.items import Item, Connector, Card, BoardMember, AppCard, Document, Shape, Text, StickyNote, Image, Embed
+from miroclient.base import BaseMiroObject
+from miroclient.entities.items import Item, Connector, Card, BoardMember, AppCard, Document, Shape, Text, StickyNote, Image, Embed
 
 
 class Board(BaseMiroObject):

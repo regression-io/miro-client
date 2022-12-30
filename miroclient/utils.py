@@ -1,6 +1,6 @@
 from requests import Response
 
-from miro.exceptions import *
+from miroclient.exceptions import *
 
 
 def get_json_or_raise_exception(response: Response) -> dict:
