@@ -70,8 +70,12 @@ class Text(BaseMiroObject):
         super().__init__(id, endpoint)
 
 
-class Embed(BaseMiroObject):
+class BoardObject(BaseMiroObject):
+    endpoint=None
+    def __init__(self, id: str = None):
+        super().__init__(id, self.endpoint)
 
-    def __init__(self, id: str = None,
-                 endpoint='embeds'):
-        super().__init__(id, endpoint)
+
+class Embed(BoardObject):
+    endpoint = 'embeds'
+
